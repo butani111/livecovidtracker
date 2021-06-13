@@ -1,5 +1,4 @@
 body{
-  /* background-color: black; */
   background-color: rgb(63, 62, 62);
   color: white;
 }
@@ -41,7 +40,7 @@ color: black;
   width: 100%;
   max-width: 1200px;
   height: auto;
-  padding-top: 3%;
+  padding-top: 1%;
   padding-left: 2%;
   margin: auto;
 }
@@ -54,13 +53,18 @@ color: black;
   width: 100%;
 }
 
+.selection-list{
+  width: 20%;
+  height: 30px;
+  margin: 10px;
+}
+
 #main ul{
   list-style: none;
   display: flex;
   flex-wrap:wrap;
   justify-content: center;
   align-items: center;
-  /* max-width: 100%; */
 }
 #main ul li{
   width: 33%;
@@ -71,9 +75,14 @@ color: black;
 .card-main{
   width: 70%;
   height: 70%;
-  /* margin: auto; */
   padding: 10px;
+  overflow-y: auto;
+  transition: transform .2s;
   border-radius: 0px 40px 0px 40px;
+}
+
+.card-main:hover{
+  transform: scale(1.1);
 }
 
 .card-title{
@@ -90,9 +99,21 @@ color: black;
   margin: 18% 0 0 0;
 }
 
+.my-footer{
+  position:sticky;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  color: black;
+  background-color: white;
+}
+
 /* --------------------------------- */
 
 @media (max-width:1000px){
+  .selection-list{
+    width: 40%;
+  }
   #main ul li{
     height: 200px;
     cursor: pointer;
@@ -111,14 +132,19 @@ color: black;
   }
 }
 @media (max-width:600px){
+  .selection-list{
+    width: 50%;
+  }
   #main ul li{
     width: 50%;
   }
 }
 @media (max-width:400px){
+  .selection-list{
+    width: 90%;
+  }
   #main{
   padding-left: 4%;
-  /* margin: auto; */
   }
   #main ul li{
     width: 100%;
