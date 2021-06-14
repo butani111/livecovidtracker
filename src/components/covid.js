@@ -16,7 +16,6 @@ const Covid = () => {
 
       setAllData(dataset.statewise);
       setData(dataset.statewise[0]);
-      // console.log(dataset.statewise[0]);
     } catch (error) {
       console.log(error)
     }
@@ -40,12 +39,11 @@ const Covid = () => {
 
   return (
     <>
-      {/* <h2> hello 12346</h2> */}
       {!data ? <h1>Loding...</h1> :
         <section id='_main_'>
           <div className='navbar'>
             <h1 className='text-center'><span style={{ fontSize: "0.8rem" }}>🔴</span> LIVE COVID TRACKER</h1>
-            =          </div>
+          </div>
 
           <select className='selection-list' onChange={e => setCurrentState(e.target.value)}>
             {
