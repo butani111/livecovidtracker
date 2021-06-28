@@ -105,7 +105,7 @@ const Covid = () => {
           </div>
 
           <div className='my-footer'>
-            <p>All right reserved. Author : butanishyam111@gmail.com</p>
+            <p>Creator : Shyam Butani <a href='https://github.com/butani111' target='_blank'>Github Profile</a></p>
           </div>
         </section>
       }

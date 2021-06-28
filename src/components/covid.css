@@ -108,6 +108,11 @@ color: black;
   background-color: white;
 }
 
+.my-footer a{
+  margin-left: 15px;
+  font-size: 0.8rem;
+}
+
 /* --------------------------------- */
 
 @media (max-width:1000px){
