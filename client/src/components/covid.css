@@ -1,0 +1,194 @@
+body {
+  background-color: rgb(63, 62, 62);
+  color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+.small-text {
+  font-size: medium;
+}
+
+.bg-color-1 {
+  background-color: #e6e6fa;
+  color: black;
+}
+.bg-color-2 {
+  background-color: #ffd700;
+  color: black;
+}
+.bg-color-3 {
+  background-color: #ff0000;
+  color: black;
+}
+.bg-color-4 {
+  background-color: #00ff00;
+}
+.bg-color-5 {
+  background-color: #f5deb3;
+  color: black;
+}
+.bg-color-6 {
+  background-color: yellow;
+  color: black;
+}
+
+/* ---------------------------------- */
+
+.loading {
+  color: white;
+  font: 800 2vmax cursive;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(34, 34, 34);
+}
+
+#_main_ {
+  display: flex;
+  flex-direction: column;
+}
+
+#main {
+  width: 100%;
+  max-width: 100vw;
+  min-height: 100vh;
+  padding-top: 1%;
+  padding-left: 5%;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+#main > ul {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  background-color: aqua;
+  color: black;
+  display: block;
+  padding: 0.1% 0;
+  width: 100%;
+}
+
+.selection-list {
+  width: 20%;
+  height: 30px;
+  margin: 10px;
+}
+
+#main ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#main ul li {
+  width: 33%;
+  height: 300px;
+  cursor: pointer;
+}
+
+.card-main {
+  width: 70%;
+  height: 70%;
+  padding: 10px;
+  overflow-y: auto;
+  transition: transform 0.2s;
+  border-radius: 0px 40px 0px 40px;
+}
+
+.card-main:hover {
+  transform: scale(1.1);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.card-title span {
+  font-size: 0.7rem;
+}
+
+.card-value {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 18% 0 0 0;
+}
+
+.my-footer {
+  color: black;
+  align-self: center;
+  text-align: center;
+  width: 100%;
+  padding: 5px auto;
+  background-color: white;
+}
+
+.my-footer a {
+  margin-left: 15px;
+  font-size: 0.8rem;
+}
+
+.github-profile-btn {
+  color: black;
+  border: 2px solid gray;
+  border-radius: 3px;
+  padding: 2px;
+  text-decoration: none;
+  background-color: rgb(200, 200, 200);
+}
+
+/* --------------------------------- */
+
+@media (max-width: 1000px) {
+  .selection-list {
+    width: 40%;
+  }
+  #main ul li {
+    height: 200px;
+    cursor: pointer;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+  .card-title span {
+    font-size: 0.6rem;
+  }
+  .card-value {
+    font-size: 1.5rem;
+  }
+  .card-main {
+    border-radius: 0px 20px 0px 20px;
+  }
+}
+@media (max-width: 600px) {
+  .selection-list {
+    width: 50%;
+  }
+  #main {
+    padding-left: 2%;
+  }
+  #main ul li {
+    width: 50%;
+  }
+}
+@media (max-width: 400px) {
+  .selection-list {
+    width: 90%;
+  }
+  #main {
+    padding-left: 4%;
+  }
+  #main ul li {
+    width: 100%;
+  }
+  .navbar {
+    font-size: 0.7rem;
+  }
+}
