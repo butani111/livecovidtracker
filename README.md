@@ -12,4 +12,4 @@ Demo Image :
 
 
 
-Web-site link : https://livecovidtracker2021.herokuapp.com/
+Web-site link : https://live-covid-case-tracker.herokuapp.com/
