@@ -8,8 +8,8 @@ const Covid = () => {
 
   const getCovidData = async () => {
     try {
-      const res = await fetch("http://localhost:5000/getdata"); // for development side
-      // const res = await fetch("/getdata"); // for production side
+//       const res = await fetch("http://localhost:5000/getdata"); // for development side
+      const res = await fetch("/getdata"); // for production side
       const dataset = await res.json();
 
       dataset.statewise[0].state = "INDIA";
